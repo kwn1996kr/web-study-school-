@@ -3,10 +3,10 @@
     <head>
         <title>웹프로그래밍 4주차 과제</title>
         <style type="text/css">
-            body{background-image: url(IOT.jpg); background-repeat: no-repeat; min-height: 100%;}
+            body{background-image: url(IOT.jpg); background-repeat: no-repeat; min-height: 100%; }
             #up {text-align: right;}
-            #first {text-decoration: underline; font-size: 25px; text-align: right;}
-            h1 {color:midnightblue; font-size: 60px; font-family: "맑은고딕";}
+            #first {text-decoration: underline; font-size: 25px; text-align: right;float:right}
+            #iot {text-decoration: none; color:midnightblue; font-size: 60px; font-family: "맑은고딕"; float:right}
             #content { font-size: 20px;}
             #date {letter-spacing: 15pt;}
             #where {letter-spacing: 15pt;}
@@ -18,13 +18,20 @@
             .schedule td {border-bottom: 1px solid;}
             .image {float: right; width: 100%;}
             .big{height:auto; width:1480px }
+            #linear{ background: repeating-linear-gradient(
+                 135deg,
+             rgb(243, 255, 178) 0,
+             rgb(243, 255, 178) 2px,
+             rgb(255, 255, 255) 0,
+             rgb(255, 255, 255) 18px
+        );}
         </style>
     </head>
     <body>
         <div class="big">
         <div class="frame">
-            <p id="first">충남 ICT/SW산업<br>육성⦁활성화 기반 마련을 위한</p>
-            <h1>사물인터넷(IOT)<br>활용 전략 세미나</h1>
+            <p><span id="first">충남 ICT/SW산업<br>육성⦁활성화 기반 마련을 위한<br></span>
+            <span id="iot"><strong>사물인터넷(IOT)<br>활용 전략 세미나</strong></span></p>
             <table id="content">
                 <tr>
                     <td><span id="date"><strong>일    시</strong></span></td><td><strong>2014.11.26(</strong>수<strong>),14:00~16:40</strong></td>
@@ -93,7 +100,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td id="seminar" rowspan="9" style="border-bottom: hidden">
+                    <td id="seminar" style="border-bottom: hidden">
                         <strong>세미나</strong>
                     </td>
                     <td>
@@ -107,6 +114,8 @@
                     </td>
                 </tr>
                 <tr>
+                    <td id="linear" rowspan="8" style = "border-bottom: hidden;">
+                    </td>
                     <td>
                         14:16-14:20
                     </td>
